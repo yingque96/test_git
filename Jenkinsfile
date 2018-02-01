@@ -12,5 +12,10 @@ pipeline {
         sh 'pip install -r requirments.txt'
       }
     }
+    stage('Test') {
+      steps {
+        sh 'echo "test suc"'
+      }
+    }
   }
 }
