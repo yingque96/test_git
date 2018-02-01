@@ -17,5 +17,10 @@ pipeline {
         sh 'echo "test suc"'
       }
     }
+    stage('Deliver') {
+      steps {
+        sh 'echo "end del"'
+      }
+    }
   }
 }
