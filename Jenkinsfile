@@ -18,7 +18,7 @@ pipeline {
       steps {
         sh 'pwd'
         dir(path: '/home/shiyanlou/shiyanlou') {
-          sh 'python app.py'
+          sh 'sudo pip install -r requirments.txt&&python app.py'
         }
         
       }
