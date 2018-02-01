@@ -9,13 +9,12 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh '''pip install -r requirments.txt
-
-
-
-
-&&
-pwd'''
+        sh 'pip install -r requirments.txt'
+      }
+    }
+    stage('test') {
+      steps {
+        sh 'pwd'
       }
     }
   }
