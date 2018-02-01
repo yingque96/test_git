@@ -10,7 +10,12 @@ pipeline {
     stage('build') {
       steps {
         sh '''pip install -r requirments.txt
-&& pwd'''
+
+
+
+
+&&
+pwd'''
       }
     }
   }
