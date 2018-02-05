@@ -23,7 +23,7 @@ pipeline {
     stage('run') {
       steps {
         dir(path: '/home/shiyanlou/test_git') {
-          sh 'python app.py &'
+          sh 'python app.py'
         }
         
       }
