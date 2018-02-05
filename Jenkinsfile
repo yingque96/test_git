@@ -14,6 +14,11 @@ pipeline {
         
       }
     }
+    stage('build') {
+      steps {
+        sh 'sudo pip install -r requirements.txt'
+      }
+    }
     stage('run') {
       steps {
         dir(path: '/home/shiyanlou/test_git') {
